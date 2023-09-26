@@ -22,8 +22,6 @@ const Home = () => {
     }, []);
 
     const handelClick = () => {
-
-
         if (input) {
             const filterData = duplicate.filter(item => item.category.toLowerCase() === input.toLowerCase())
             console.log(filterData)
