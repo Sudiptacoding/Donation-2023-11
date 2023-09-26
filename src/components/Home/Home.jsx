@@ -35,7 +35,6 @@ const Home = () => {
             setCards(duplicate)
         }
         document.getElementById('catainput').value = '';
-
     }
 
 
