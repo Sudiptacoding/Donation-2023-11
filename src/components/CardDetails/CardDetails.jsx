@@ -6,16 +6,19 @@ import swal from 'sweetalert';
 
 const CardDetails = () => {
     const [showCard, setShowCard] = useState({})
-    const { id } = useParams()
-    const local = useLocation()
+    const { id } = useParams();
+
+    const local = useLocation();
+
     useEffect(() => {
-        fetch('../../../public/fakedata.js')
+        fetch('../../fakedata.js')
             .then(response => response.json())
             .then(data => {
                 const findData = data.find(card => card.id === parseInt(id))
                 setShowCard(findData)
             })
-    }, [])
+    }, []);
+
 
     const navigate = useNavigate()
     const handelSaveData = (id) => {
