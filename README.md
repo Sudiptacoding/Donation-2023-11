@@ -1,8 +1,7 @@
-# React + Vite
+# Answer The Question
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+There are three nice features of my website:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- The website is responsively designed for all devices
+- You can donate maximum once on each card and your donation will be saved in storage so that you can see later how    many cards you have donated on.
+- The website uses a nice pie chart so you can easily see your donation percentage
