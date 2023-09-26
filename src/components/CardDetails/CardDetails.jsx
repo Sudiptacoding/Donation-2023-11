@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
-import { Link, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { addData, getData } from '../../../public/Utiliti/Localstorage';
 import swal from 'sweetalert';
 
 const CardDetails = () => {
     const [showCard, setShowCard] = useState({})
     const { id } = useParams();
-
     const local = useLocation();
 
     useEffect(() => {
