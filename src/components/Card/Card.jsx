@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Card = ({ card }) => {
     const { id, image, rectangleimage, type, category, description, price, cardbg, categorybg, textcolor } = card;
-
     const navigate = useNavigate();
     const handelReadMode = (id) => {
         navigate(`/carddetails/${id}`)
