@@ -11,7 +11,6 @@ const Home = () => {
     const [input, setInput] = useState();
     const [duplicate, setDuplicate] = useState([])
 
-
     useEffect(() => {
         fetch('fakedata.js')
             .then(response => response.json())
