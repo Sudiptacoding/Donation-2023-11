@@ -18,7 +18,6 @@ const CardDetails = () => {
             })
     }, []);
 
-
     const navigate = useNavigate()
     const handelSaveData = (id) => {
         const localStoreId = getData()
