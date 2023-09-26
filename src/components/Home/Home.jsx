@@ -37,7 +37,6 @@ const Home = () => {
         document.getElementById('catainput').value = '';
     }
 
-
     return (
         <div>
             <div className='background-container lg:px-[140px] pt-[50px] px-6 text-center'>
