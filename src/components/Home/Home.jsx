@@ -12,7 +12,7 @@ const Home = () => {
     const [duplicate, setDuplicate] = useState([])
 
     useEffect(() => {
-        fetch('fakedata.js')
+        fetch('/FakeData.json')
             .then(response => response.json())
             .then(data => {
                 setDuplicate(data)

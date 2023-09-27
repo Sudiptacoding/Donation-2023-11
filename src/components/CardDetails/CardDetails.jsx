@@ -10,7 +10,7 @@ const CardDetails = () => {
     const local = useLocation();
 
     useEffect(() => {
-        fetch('../../fakedata.js')
+        fetch('/FakeData.json')
             .then(response => response.json())
             .then(data => {
                 const findData = data.find(card => card.id === parseInt(id))

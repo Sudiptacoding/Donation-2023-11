@@ -5,10 +5,10 @@ import { getData, removeCard } from '../../../public/Utiliti/Localstorage';
 
 const Donation = () => {
     const [donation, setDonation] = useState([])
-    const [seeall, setSeeAll] = useState(3);
+    const [seeall, setSeeAll] = useState(4);
     const [show, setShow] = useState(true);
     useEffect(() => {
-        fetch('../fakedata.js')
+        fetch('/FakeData.json')
             .then(response => response.json())
             .then(data => {
                 const localStoreData = getData()
@@ -38,6 +38,7 @@ const Donation = () => {
         const totalDonation = (donation.length / 12) * 100
         localStorage.setItem('complet', totalDonation.toFixed(1))
     }, [donation])
+
 
     return (
         <div className='lg:px-[140px] pt-[50px] px-6'>
